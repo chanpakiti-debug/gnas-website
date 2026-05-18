@@ -62,9 +62,9 @@ nav {
 .hero-overlay {
   position:absolute; inset:0;
   background: linear-gradient(135deg,
-    rgba(255,254,251,0.97) 0%,
-    rgba(255,254,251,0.85) 35%,
-    rgba(255,254,251,0.30) 70%,
+    rgba(255,254,251,1) 0%,
+    rgba(255,254,251,0.95) 35%,
+    rgba(255,254,251,0.25) 75%,
     transparent 100%
   );
   z-index:1;
@@ -90,18 +90,26 @@ nav {
   }
 
 .hero-i { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; position:relative; z-index:2; }
+.hero-text-card {
+  background: rgba(255,254,251,0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 36px;
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+}
 .hero-badge {
   display:inline-flex; align-items:center; gap:6px;
   background:var(--orange); color:#fff; padding:6px 18px; border-radius:50px;
   font-size:12px; font-weight:600; margin-bottom:20px;
 }
-.hero h1 { font-size:48px; font-weight:800; line-height:1.08; margin-bottom:8px; color:var(--dark); letter-spacing:-1.2px; text-shadow:0 2px 8px rgba(255,255,255,0.8); }
-.hero .hl { color:var(--orange); text-shadow:0 2px 12px rgba(234,102,37,0.15); }
-.hero .h1-sub { font-size:16px; font-weight:500; color:var(--gray); text-shadow:0 1px 4px rgba(255,255,255,0.6); letter-spacing:0; margin-bottom:12px; }
-.hero p { font-size:16px; color:var(--gray); line-height:1.7; margin-bottom:28px; text-shadow:0 1px 4px rgba(255,255,255,0.4); }
+.hero h1 { font-size:48px; font-weight:800; line-height:1.08; margin-bottom:8px; color:#1a1a1a; letter-spacing:-1.2px; }
+.hero .hl { color:var(--orange); }
+.hero .h1-sub { font-size:16px; font-weight:500; color:#555; letter-spacing:0; margin-bottom:12px; }
+.hero p { font-size:15px; color:#555; line-height:1.7; margin-bottom:28px; }
 .hero-st { display:flex; gap:36px; margin-bottom:28px; }
 .hero-st h3 { font-size:32px; font-weight:800; color:var(--orange); line-height:1; }
-.hero-st p { font-size:13px; color:var(--gray-light); margin-top:2px; }
+.hero-st p { font-size:13px; color:#555; margin-top:2px; }
 .hero-btns { display:flex; gap:12px; }
 .btn {
   display:inline-flex; align-items:center; gap:6px;
@@ -260,11 +268,11 @@ footer .soci a:hover { background:var(--orange); transform:translateY(-2px); }
   </div>
 
   <div class="hero-i">
-    <div>
+    <div class="hero-text-card">
       <div class="hero-badge">🏫 เปิดรับสมัคร | Now Enrolling</div>
       <h1>เรียนภาษา สู่<br><span class="hl">โอกาสระดับโลก</span></h1>
-      <div class="h1-sub en">Learn Thai & Japanese — Open Doors to Global Opportunities 🌏</div>
-      <p>โรงเรียนจีนัสบริบาลและภาษา (GNAS) — สถาบันการศึกษาเอกชนนอกระบบ ใบอนุญาตเลขที่ นม 08/2555 จ.นครราชสีมา<br><span class="en" style="color:var(--gray-light);font-size:13px;">GNAS is a licensed private school in Nakhon Ratchasima, Thailand, offering language and wellness programs since 2012.</span></p>
+      <div class="h1-sub en">Learn Thai & Japanese — Open Doors to Global Opportunities</div>
+      <p>โรงเรียนจีนัสบริบาลและภาษา (GNAS) — สถาบันการศึกษาเอกชนนอกระบบ ใบอนุญาตเลขที่ นม 08/2555 จ.นครราชสีมา<br><span class="en" style="color:#777;font-size:13px;">GNAS is a licensed private school in Nakhon Ratchasima, Thailand, offering language and wellness programs since 2012.</span></p>
       <div class="hero-st">
         <div><h3>5</h3><p>หลักสูตร | Programs</p></div>
         <div><h3>20+</h3><p>นักเรียน | Students</p></div>
